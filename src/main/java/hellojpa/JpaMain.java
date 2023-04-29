@@ -18,7 +18,7 @@ public class JpaMain {
 
         try {
             Member member = new Member();
-            Member findMember = em.find(Member.class, member.getId());
+            Member findMember = em.find(Member.class, member.getMemberId());
 //            List<Member> members = findMember.get
 
             tx.commit();
